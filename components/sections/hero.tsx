@@ -4,12 +4,28 @@ import { motion } from "framer-motion"
 import { ArrowDown, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Waves from "@/components/Waves"
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20 pb-16 md:pt-0 md:pb-0 overflow-hidden">
       {/* Aurora background effect */}
       <div className="aurora" />
+
+      {/* Waves background animation */}
+      <Waves
+        lineColor="rgba(255, 255, 255, 0.1)"
+        backgroundColor="transparent"
+        waveSpeedX={0.02}
+        waveSpeedY={0.01}
+        waveAmpX={40}
+        waveAmpY={20}
+        friction={0.9}
+        tension={0.01}
+        maxCursorMove={120}
+        xGap={12}
+        yGap={36}
+      />
       
       {/* Hero illustration - visible on larger screens */}
       <motion.div
