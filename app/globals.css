@@ -253,10 +253,38 @@
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+  background: linear-gradient(
+    135deg, 
+    #4A5759 0%, 
+    #EDAFB8 50%, 
+    #4A5759 100%
+  );
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.shiny-text {
+  color: var(--foreground);
+  background: linear-gradient(
+    to right,
+    #4A5759,
+    #EDAFB8 50%,
+    #4A5759
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shine 3s linear infinite;
 }
 
 /* Star field background */

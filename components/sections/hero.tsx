@@ -49,14 +49,14 @@ export function Hero() {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="text-center relative z-10"
       >
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-3 md:mb-4">
-          <span className="gradient-text">Alin Mishra</span>
+        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter mb-4 md:mb-6">
+          <span className="shiny-text">Alin Mishra</span>
         </h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-light"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-foreground/80 font-medium"
         >
           Shopify Developer & Web Craftsman
         </motion.p>

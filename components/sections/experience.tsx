@@ -8,8 +8,8 @@ const experiences = [
   {
     title: "Web Developer",
     company: "Midis Resources Pvt. Ltd.",
-    type: "Freelancer",
-    period: "Present",
+    type: "Full-time",
+    period: "June 2025 - Present",
     description: [
       "Developed and customized Shopify themes using Liquid, HTML, CSS, and JavaScript",
       "Built custom Shopify sections, templates, and dynamic product pages",
