@@ -11,37 +11,6 @@ export function Hero() {
       {/* Aurora background effect */}
       <div className="aurora" />
       
-      {/* Hero illustration - visible on larger screens */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 0.15, scale: 1 }}
-        transition={{ duration: 1.2 }}
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
-      >
-        <div className="relative w-[400px] h-[400px] md:w-[600px] md:h-[600px] opacity-50">
-          <Image
-            src="/images/hero-illustration.jpg"
-            alt=""
-            fill
-            className="object-contain rounded-full blur-sm"
-            priority
-          />
-        </div>
-      </motion.div>
-      
-      {/* Floating badge */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5, y: -30 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="mb-6 md:mb-8 relative z-10"
-      >
-        <div className="glass rounded-full px-4 py-2 md:px-6 md:py-3 flex items-center gap-2 md:gap-3">
-          <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-primary" />
-          <span className="text-xs md:text-sm font-medium text-foreground/90">3+ Years of Experience</span>
-        </div>
-      </motion.div>
-
       {/* Main heading */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -103,22 +72,6 @@ export function Hero() {
           View Projects
         </Button>
       </motion.div>
-
-      {/* Floating decorative elements - hidden on mobile */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.4 }}
-        transition={{ duration: 1.5, delay: 1 }}
-        className="absolute top-1/4 left-10 w-16 md:w-20 h-16 md:h-20 rounded-full bg-primary/20 blur-xl animate-drift hidden md:block"
-        style={{ animationDelay: "0s" }}
-      />
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.3 }}
-        transition={{ duration: 1.5, delay: 1.2 }}
-        className="absolute bottom-1/3 right-10 w-24 md:w-32 h-24 md:h-32 rounded-full bg-secondary/20 blur-xl animate-drift hidden md:block"
-        style={{ animationDelay: "5s" }}
-      />
 
       {/* Scroll indicator */}
       <motion.div
