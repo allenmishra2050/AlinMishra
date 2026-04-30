@@ -14,7 +14,7 @@ import Waves from "@/components/Waves"
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen">
+    <main id="top" className="relative min-h-screen">
       {/* Background effects */}
       <StarField />
       <CustomCursor />
