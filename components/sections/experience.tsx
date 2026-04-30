@@ -15,7 +15,7 @@ const experiences = [
       "Built custom Shopify sections, templates, and dynamic product pages",
       "Integrated third-party apps and APIs to extend store functionality",
     ],
-    color: "purple" as const,
+    color: "pink" as const,
   },
   {
     title: "Analyst",
@@ -25,7 +25,7 @@ const experiences = [
       "Provided technical support and resolved customer issues across digital platforms",
       "Worked with internal teams to improve operational processes",
     ],
-    color: "teal" as const,
+    color: "sage" as const,
   },
   {
     title: "Analyst",
@@ -35,7 +35,7 @@ const experiences = [
       "Handled customer technical support and troubleshooting requests",
       "Maintained client service KPIs and quality standards",
     ],
-    color: "indigo" as const,
+    color: "slate" as const,
   },
   {
     title: "Analyst",
@@ -45,7 +45,7 @@ const experiences = [
       "Managed technical support and data analysis tasks",
       "Performed troubleshooting and process optimization",
     ],
-    color: "purple" as const,
+    color: "pink" as const,
   },
 ]
 
@@ -169,7 +169,7 @@ export function Experience() {
               <FloatingCard
                 key={edu.degree}
                 delay={index * 0.1}
-                glowColor={index === 0 ? "teal" : "indigo"}
+                glowColor={index === 0 ? "sage" : "slate"}
                 floatAnimation="slow"
               >
                 <div className="flex items-start gap-3 md:gap-4">

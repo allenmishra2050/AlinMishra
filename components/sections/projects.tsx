@@ -12,32 +12,32 @@ const projects = [
     description: "Developed responsive Shopify storefronts with custom sections and product templates for optimal conversion.",
     tech: ["Shopify", "Liquid", "JavaScript", "CSS"],
     link: "https://alin-mishra.myshopify.com",
-    color: "purple" as const,
+    color: "pink" as const,
     featured: true,
   },
   {
     title: "Personal Portfolio Website",
     description: "Built a responsive portfolio showcasing projects and skills using modern web technologies.",
     tech: ["HTML5", "CSS3", "JavaScript"],
-    color: "teal" as const,
+    color: "sage" as const,
   },
   {
     title: "IoT Smart Safety System",
     description: "Developed an IoT-based industrial safety monitoring system for real-time hazard detection.",
     tech: ["IoT", "Sensors", "Python"],
-    color: "indigo" as const,
+    color: "slate" as const,
   },
   {
     title: "PoseNet AI",
     description: "Built a posture detection system using TensorFlow.js for real-time body pose estimation.",
     tech: ["TensorFlow.js", "JavaScript", "AI/ML"],
-    color: "purple" as const,
+    color: "pink" as const,
   },
   {
     title: "Contact Book App",
     description: "Developed a cross-platform Android application for managing contacts with a clean UI.",
     tech: ["Flutter", "Dart", "Mobile"],
-    color: "teal" as const,
+    color: "sage" as const,
   },
 ]
 

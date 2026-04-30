@@ -15,7 +15,7 @@ const skillCategories = [
       "Storefront API",
       "App Integrations",
     ],
-    color: "purple" as const,
+    color: "pink" as const,
   },
   {
     title: "Frontend",
@@ -27,7 +27,7 @@ const skillCategories = [
       "React",
       "Flutter",
     ],
-    color: "teal" as const,
+    color: "sage" as const,
   },
   {
     title: "Backend & Tools",
@@ -39,7 +39,7 @@ const skillCategories = [
       "AI Tools",
       "Git",
     ],
-    color: "indigo" as const,
+    color: "slate" as const,
   },
 ]
 

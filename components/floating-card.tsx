@@ -4,12 +4,13 @@ import type { ReactNode } from "react"
 import { useState, useRef } from "react"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
+import BorderGlow from "@/components/BorderGlow"
 
 interface FloatingCardProps {
   children: ReactNode
   className?: string
   delay?: number
-  glowColor?: "purple" | "teal" | "indigo"
+  glowColor?: "pink" | "sage" | "slate"
   floatAnimation?: "slow" | "medium" | "fast"
 }
 
@@ -17,7 +18,7 @@ export function FloatingCard({
   children,
   className,
   delay = 0,
-  glowColor = "purple",
+  glowColor = "pink",
   floatAnimation = "medium",
 }: FloatingCardProps) {
   const [rotateX, setRotateX] = useState(0)
@@ -32,7 +33,6 @@ export function FloatingCard({
     const mouseX = e.clientX - centerX
     const mouseY = e.clientY - centerY
     
-    // Reduced tilt intensity for more stability
     const rotateXValue = (mouseY / (rect.height / 2)) * -3
     const rotateYValue = (mouseX / (rect.width / 2)) * 3
     
@@ -51,38 +51,56 @@ export function FloatingCard({
     fast: "animate-float-fast",
   }[floatAnimation]
 
-  const glowClass = {
-    purple: "hover:glow-purple",
-    teal: "hover:glow-teal",
-    indigo: "hover:glow-indigo",
+  // Map palette colors to HSL and Mesh Gradient colors
+  const colorSettings = {
+    pink: {
+      hsl: "350 45% 85%", // #EDAFB8ish
+      mesh: ["#EDAFB8", "#F7E1D7", "#DEDBD2"]
+    },
+    sage: {
+      hsl: "125 15% 75%", // #B0C4B1ish
+      mesh: ["#B0C4B1", "#DEDBD2", "#F7E1D7"]
+    },
+    slate: {
+      hsl: "190 10% 35%", // #4A5759ish
+      mesh: ["#4A5759", "#B0C4B1", "#DEDBD2"]
+    }
   }[glowColor]
 
   return (
     <motion.div
-      ref={cardRef}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
       className={cn("perspective-1000", floatClass)}
       style={{ animationDelay: `${delay}s` }}
     >
-      <motion.div
-        animate={{
-          rotateX,
-          rotateY,
-        }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className={cn(
-          "glass rounded-2xl p-6 preserve-3d transition-shadow duration-300",
-          glowClass,
-          className
-        )}
+      <BorderGlow
+        glowColor={colorSettings.hsl}
+        colors={colorSettings.mesh}
+        backgroundColor="rgba(247, 225, 215, 0.4)" // Semi-transparent cream
+        borderRadius={16}
+        glowIntensity={1.2}
+        animated={true}
       >
-        {children}
-      </motion.div>
+        <motion.div
+          ref={cardRef}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+          animate={{
+            rotateX,
+            rotateY,
+          }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          className={cn(
+            "backdrop-blur-xl bg-white/10 p-6 preserve-3d transition-shadow duration-300",
+            className
+          )}
+        >
+          {children}
+        </motion.div>
+      </BorderGlow>
     </motion.div>
   )
 }
