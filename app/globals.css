@@ -4,34 +4,34 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.08 0.02 280);
-  --foreground: oklch(0.95 0.01 280);
-  --card: oklch(0.12 0.02 280);
-  --card-foreground: oklch(0.95 0.01 280);
-  --popover: oklch(0.12 0.02 280);
-  --popover-foreground: oklch(0.95 0.01 280);
-  --primary: oklch(0.7 0.18 280);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.55 0.15 180);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.2 0.02 280);
-  --muted-foreground: oklch(0.65 0.02 280);
-  --accent: oklch(0.6 0.2 320);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.25 0.04 280);
-  --input: oklch(0.18 0.02 280);
-  --ring: oklch(0.7 0.18 280);
-  --chart-1: oklch(0.7 0.18 280);
-  --chart-2: oklch(0.55 0.15 180);
-  --chart-3: oklch(0.6 0.2 320);
-  --chart-4: oklch(0.75 0.15 60);
-  --chart-5: oklch(0.65 0.2 140);
+  --background: #F7E1D7;
+  --foreground: #4A5759;
+  --card: #F7E1D7;
+  --card-foreground: #4A5759;
+  --popover: #F7E1D7;
+  --popover-foreground: #4A5759;
+  --primary: #EDAFB8;
+  --primary-foreground: #4A5759;
+  --secondary: #B0C4B1;
+  --secondary-foreground: #4A5759;
+  --muted: #DEDBD2;
+  --muted-foreground: #4A5759;
+  --accent: #EDAFB8;
+  --accent-foreground: #4A5759;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
+  --border: #B0C4B1;
+  --input: #B0C4B1;
+  --ring: #EDAFB8;
+  --chart-1: #EDAFB8;
+  --chart-2: #B0C4B1;
+  --chart-3: #4A5759;
+  --chart-4: #DEDBD2;
+  --chart-5: #F7E1D7;
   --radius: 0.75rem;
-  --glow-purple: oklch(0.6 0.25 280);
-  --glow-teal: oklch(0.65 0.2 180);
-  --glow-indigo: oklch(0.55 0.25 260);
+  --glow-purple: #EDAFB8;
+  --glow-teal: #B0C4B1;
+  --glow-indigo: #4A5759;
 }
 
 @theme inline {
@@ -287,9 +287,9 @@
   width: 200%;
   height: 200%;
   background: 
-    radial-gradient(ellipse at 30% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 60%, rgba(45, 212, 191, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 40%);
+    radial-gradient(ellipse at 30% 20%, rgba(237, 175, 184, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 60%, rgba(176, 196, 177, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(74, 87, 89, 0.1) 0%, transparent 40%);
   animation: drift 30s ease-in-out infinite;
 }
 

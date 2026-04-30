@@ -20,7 +20,7 @@ export default function Home() {
       <CustomCursor />
       <div className="fixed inset-0 z-0">
         <Waves
-          lineColor="rgba(255, 255, 255, 0.08)"
+          lineColor="rgba(74, 87, 89, 0.15)"
           backgroundColor="transparent"
           waveSpeedX={0.02}
           waveSpeedY={0.01}
