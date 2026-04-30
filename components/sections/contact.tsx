@@ -97,7 +97,7 @@ export function Contact() {
                 <FloatingCard
                   key={info.label}
                   delay={index * 0.1}
-                  glowColor={["purple", "teal", "indigo"][index] as "purple" | "teal" | "indigo"}
+                  glowColor={["pink", "sage", "slate"][index] as "pink" | "sage" | "slate"}
                   floatAnimation="slow"
                 >
                   <div className="flex items-center gap-3 md:gap-4">
@@ -152,7 +152,7 @@ export function Contact() {
             className="order-1 lg:order-2"
           >
             <FloatingCard
-              glowColor="purple"
+              glowColor="pink"
               floatAnimation="slow"
               className="p-5 md:p-8"
             >

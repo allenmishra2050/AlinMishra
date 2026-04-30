@@ -16,37 +16,37 @@ const services = [
     icon: Palette,
     title: "Custom Shopify Themes",
     description: "Bespoke theme development from scratch or customization of existing themes to match your brand.",
-    color: "purple" as const,
+    color: "pink" as const,
   },
   {
     icon: Puzzle,
     title: "App Integration",
     description: "Seamless integration of third-party apps and APIs to extend your store&apos;s functionality.",
-    color: "teal" as const,
+    color: "sage" as const,
   },
   {
     icon: Zap,
     title: "Performance Optimization",
     description: "Speed up your store for better conversions and SEO with advanced optimization.",
-    color: "indigo" as const,
+    color: "slate" as const,
   },
   {
     icon: Globe,
     title: "Headless Commerce",
     description: "Modern headless setups using Shopify&apos;s Storefront API for ultimate flexibility.",
-    color: "purple" as const,
+    color: "pink" as const,
   },
   {
     icon: MessageSquare,
     title: "Technical Support",
     description: "3+ years of customer support experience — I speak both tech and human fluently.",
-    color: "teal" as const,
+    color: "sage" as const,
   },
   {
     icon: Wrench,
     title: "Maintenance & Updates",
     description: "Ongoing support to keep your store running smoothly with regular updates.",
-    color: "indigo" as const,
+    color: "slate" as const,
   },
 ]
 

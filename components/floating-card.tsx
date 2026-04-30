@@ -65,7 +65,10 @@ export function FloatingCard({
       hsl: "190 10% 35%", // #4A5759ish
       mesh: ["#4A5759", "#B0C4B1", "#DEDBD2"]
     }
-  }[glowColor]
+  }[glowColor] || {
+    hsl: "350 45% 85%",
+    mesh: ["#EDAFB8", "#F7E1D7", "#DEDBD2"]
+  }
 
   return (
     <motion.div
