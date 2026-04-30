@@ -76,7 +76,7 @@ export function FloatingCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay }}
-      className={cn("perspective-1000", floatClass)}
+      className={cn("perspective-1000 h-full", floatClass)}
       style={{ animationDelay: `${delay}s` }}
     >
       <BorderGlow
@@ -86,6 +86,7 @@ export function FloatingCard({
         borderRadius={16}
         glowIntensity={1.2}
         animated={true}
+        className="h-full"
       >
         <motion.div
           ref={cardRef}
@@ -97,7 +98,7 @@ export function FloatingCard({
           }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
           className={cn(
-            "backdrop-blur-xl bg-white/10 p-6 preserve-3d transition-shadow duration-300",
+            "backdrop-blur-xl bg-white/5 h-full p-6 preserve-3d transition-shadow duration-300 rounded-[inherit]",
             className
           )}
         >
